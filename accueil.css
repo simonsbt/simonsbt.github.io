@@ -1,0 +1,179 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(ReadexPro-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: myFirstFont, sans-serif;
+    color: white;
+}
+
+body {
+    padding: 40px 120px;
+    background-image: url("Home.svg");
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.logo {
+    padding-right: 10%;
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+#active {
+    color: #FE881A;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+#orange {
+    color: #FE881A;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding-left: 55px;
+}
+
+#content2 {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+#text {
+    width: 581px;
+}
+
+
+
+#description {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.hover-underline-animation:hover {
+    color: #FE881A;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FE881A;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#btnMenu {
+    border: 3px solid #FE881A;
+    border-radius: 35px;
+    color: #FE881A;
+    font-size: 24px;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+#btnMenu {
+    border: solid 2px #FE881A;
+    background-color: transparent;
+    border-radius: 35px;
+    color: #FE881A;
+    width: 250px;
+    height: 66px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+  
+#btnMenu:after {
+    background-color: #FE881A;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+    
+    
+  #btnMenu:hover::after{
+    transform: translate(0, 0);
+  }
+    
+    
+  #btnMenu:hover {
+    border: 2px solid transparent;
+    color: white;
+    transform: scale(1.05);
+    will-change: transform;
+  }
+
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
+  
+
+  
+    
+    
