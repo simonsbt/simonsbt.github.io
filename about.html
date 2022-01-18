@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="">
@@ -7,18 +7,21 @@
         <meta name="descirption" content="">
         <meta name="viewport" content="width=device-width, intial-scale=1">
         <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="standard.css">
+        <link rel="stylesheet" href="hover-underline-animation.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
         <link rel="icon" type="image/png" href="Assets/favicon.png" />
     </head>
     <body>
         <header>
-            <a href="index.html" class="logo">Pizza-là<span id="orange">.</span></a>
+            <a href="index.html" class="logo">Pizza-là<span class="orange">.</span></a>
             <nav>
                 <ul>
                     <li><a href="index.html" class="hover-underline-animation">ACCUEIL</a></li>
                     <li><a href="menu.html" class="hover-underline-animation">MENU</a></li>
                     <li><a href="contact.html" class="hover-underline-animation">CONTACT & HORAIRES</a></li>
-                    <li><a href="about.html" id="active" class="hover-underline-animation">À PROPOS</a></li>
+                    <li><a href="about.html" class="hover-underline-animation orange">À PROPOS</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,10 +40,10 @@
                     <div class="swiper-slide"><img src="Images/IMG2.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="Images/IMG3.jpg" alt=""></div>
                 </div>
-                <!-- If we need pagination -->
+                <!-- For pagination -->
                 <div class="swiper-pagination"></div>
             
-                <!-- If we need navigation buttons -->
+                <!-- For navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
@@ -56,12 +59,12 @@
         direction: 'horizontal',
         loop: true,
 
-        // If we need pagination
+        // For pagination
         pagination: {
             el: '.swiper-pagination',
         },
 
-        // Navigation arrows
+        // For navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
